@@ -10,7 +10,11 @@ graphene-django==3.2.2
 graphene-file-upload==1.3.0
 graphql-core==3.2.4
 graphql-relay==3.2.0
+<<<<<<< HEAD
 mysqlclient==2.2.4
+=======
+mysqlclient==2.2.6
+>>>>>>> origin/master
 promise==2.3
 six==1.16.0
 soupsieve==2.6

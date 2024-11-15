@@ -11,8 +11,37 @@
         <h1>Sign Up</h1>
         <form method="POST">
             {% csrf_token %}
+<<<<<<< HEAD
             {% bootstrap_form form %}
             <input type="submit" class="btn btn-success" value="Sign Up">
+=======
+            <div class="row">
+                <div class="col-md-6">
+                    {% bootstrap_field form.username %}
+                </div>
+                <div class="col-md-6">
+                    {% bootstrap_field form.user_type %}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    {% bootstrap_field form.first_name %}
+                </div>
+                <div class="col-md-6">
+                    {% bootstrap_field form.last_name %}
+                </div>
+            </div>       
+            <div class="row">
+                <div class="col-md-6">
+                    {% bootstrap_field form.password1 %}
+                </div>
+                <div class="col-md-6">
+                    {% bootstrap_field form.password2 %}
+                </div>
+            </div>                 
+            {% bootstrap_field form.email %}
+            <input type="submit" class="btn btn-secondary" value="Sign Up">
+>>>>>>> origin/master
         </form>
     </div>
 {% endblock body_content %}

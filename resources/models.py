@@ -6,6 +6,10 @@ from django.utils import timezone
 import os
 from django.conf import settings
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
 # Create your models here.
 class Resource(models.Model):
     resource_name = models.CharField(max_length=200, blank=False)
@@ -16,4 +20,8 @@ class Resource(models.Model):
         return self.resource_name
 
     def get_absolute_url(self):
+<<<<<<< HEAD
         return reverse('courses:list')
+=======
+        return reverse('courses:list')
+>>>>>>> origin/master

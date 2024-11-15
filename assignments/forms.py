@@ -38,4 +38,12 @@ class SubmitAssignmentForm(ModelForm):
         assignment = kwargs.pop('assignment_id')
         super().__init__(*args, **kwargs)
         self.fields['assignment_ques'].queryset = self.fields['assignment_ques'].queryset.filter(pk=assignment)
+<<<<<<< HEAD
         self.fields['author'].queryset = self.fields['author'].queryset.filter(username=user.username)
+=======
+        if self.fields['assignment_ques'].queryset.count() == 1:
+            self.fields['assignment_ques'].initial = self.fields['assignment_ques'].queryset.first()        
+        self.fields['author'].queryset = self.fields['author'].queryset.filter(username=user.username)
+        if self.fields['author'].queryset.count() == 1:
+            self.fields['author'].initial = self.fields['author'].queryset.first()        
+>>>>>>> origin/master

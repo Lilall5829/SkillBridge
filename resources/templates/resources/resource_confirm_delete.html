@@ -12,8 +12,13 @@
                 <h2>Are you sure you want to delete this resource?</h2>
                 <form method="post">
                     {% csrf_token %}
+<<<<<<< HEAD
                     <input type="submit" value="Confirm Delete" class="btn btn-danger btn-large">
                     <a href="{% url 'courses:list' %}" class="btn btn-primary btn-large">Cancel</a>
+=======
+                    <input type="submit" value="Confirm Delete" class="btn btn-secondary btn-large">
+                    <a href="{% url 'courses:list' %}" class="btn btn-secondary btn-large">Cancel</a>
+>>>>>>> origin/master
                 </form>
             </div>
         </div>

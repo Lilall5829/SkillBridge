@@ -1,7 +1,14 @@
 from django.db import models
 from django.urls import reverse
+<<<<<<< HEAD
 from users.models import User
 
+=======
+
+from users.models import User
+
+
+>>>>>>> origin/master
 # Create your models here.
 class Course(models.Model):
     course_name = models.CharField(max_length=200)
@@ -18,6 +25,7 @@ class Course(models.Model):
     class Meta:
         ordering = ['course_name']
 
+<<<<<<< HEAD
 class Enrollment(models.Model):
     course = models.ForeignKey(Course, related_name="enrollments",on_delete=models.CASCADE)
     student = models.ForeignKey(User, related_name="user_courses", on_delete=models.CASCADE)
@@ -27,3 +35,16 @@ class Enrollment(models.Model):
 
     class Meta:
         unique_together = ('course', 'student')
+=======
+
+class Enrollment(models.Model):
+    course = models.ForeignKey(Course, related_name="enrollments", on_delete=models.CASCADE)
+    student = models.ForeignKey(User, related_name="user_courses", on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.student.username
+
+    class Meta:
+        unique_together = ('course', 'student')
+
+>>>>>>> origin/master

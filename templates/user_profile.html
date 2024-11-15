@@ -36,7 +36,11 @@
                                 {{course.course_description}}
                             </p>
                             <a href="{% url 'courses:detail' pk=course.pk %}" 
+<<<<<<< HEAD
                             class="btn btn-primary card-link">More Info</a>
+=======
+                            class="btn btn-secondary card-link">More Info</a>
+>>>>>>> origin/master
                             <p>{{course.students.count}}
                                     member{{course.students.count|pluralize}}</p>
                             </div>
@@ -61,8 +65,13 @@
                             <p class="card-text">
                                 {{course.course_description}}
                             </p>
+<<<<<<< HEAD
                             <a href="{% url 'courses:detail' pk=course.pk %}" class="btn btn-primary card-link">More Info</a>
                             <a href="{% url 'courses:unenroll' pk=course.pk %}" class="btn btn-danger card-link">Unenroll</a>
+=======
+                            <a href="{% url 'courses:detail' pk=course.pk %}" class="btn btn-secondary card-link">More Info</a>
+                            <a href="{% url 'courses:unenroll' pk=course.pk %}" class="btn btn-secondary card-link">Unenroll</a>
+>>>>>>> origin/master
                             <p>{{course.students.count}}
                                     member{{course.students.count|pluralize}}</p>
                             </div>

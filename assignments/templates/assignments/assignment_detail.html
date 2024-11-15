@@ -15,8 +15,13 @@
         
         <p>Description: {{assignment.assignment_description}}</p>
         {% if user.user_type == 2 %}
+<<<<<<< HEAD
             <a href="{% url 'assignments:update' pk=assignment.pk %}" class="btn btn-warning btn-lg">Update</a>
             <a href="{% url 'assignments:delete' pk=assignment.pk %}" class="btn btn-danger btn-lg">Delete</a>
+=======
+            <a href="{% url 'assignments:update' pk=assignment.pk %}" class="btn btn-secondary btn-lg">Update</a>
+            <a href="{% url 'assignments:delete' pk=assignment.pk %}" class="btn btn-secondary btn-lg">Delete</a>
+>>>>>>> origin/master
 
             <div class="submissions">
             <h3>Submissions</h3>
@@ -41,7 +46,11 @@
         {% else %}            
             {% if assignment.course in course %}
                 {% if duedate >= time %}
+<<<<<<< HEAD
                     <a href="{% url 'assignments:submit' %}" class="btn btn-success btn-lg">Submit Assignment</a>
+=======
+                    <a href="{% url 'assignments:submit' %}" class="btn btn-secondary btn-lg">Submit Assignment</a>
+>>>>>>> origin/master
                 {% endif %}
                 <div class="submissions">
                 <h3>My Submissions:</h3>

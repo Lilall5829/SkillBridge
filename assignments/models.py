@@ -7,6 +7,10 @@ from django.core.validators import MaxValueValidator, MinValueValidator
 import os
 from django.conf import settings
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
 # Create your models here.
 class Assignment(models.Model):
     assignment_name = models.CharField(max_length=200, blank=False)
@@ -21,6 +25,10 @@ class Assignment(models.Model):
     def get_absolute_url(self):
         return reverse('assignments:detail', kwargs={'pk': self.pk})
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
 class SubmitAssignment(models.Model):
     author = models.ForeignKey(User, related_name='assignment', on_delete=models.CASCADE)
     topic = models.CharField(max_length=200, blank=False)
@@ -48,6 +56,10 @@ class SubmitAssignment(models.Model):
     def delete(self, *args, **kwargs):
         os.remove(os.path.join(settings.MEDIA_ROOT, self.assignment_file.name))
         super().delete(*args, **kwargs)
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> origin/master
     def get_absolute_url(self):
         return reverse('assignments:submit_detail', kwargs={'pk': self.pk})

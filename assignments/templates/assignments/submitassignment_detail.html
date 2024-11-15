@@ -17,7 +17,11 @@
             <p>Description: {{submissions.description}}</p>
             <p>Submission: {{submissions.assignment_file.name}}</p>
              
+<<<<<<< HEAD
             <a href="{{submissions.assignment_file.url}}" class="btn btn-lg btn-primary" download>Download</a>
+=======
+            <a href="{{submissions.assignment_file.url}}" class="btn btn-lg btn-secondary" download>Download</a>
+>>>>>>> origin/master
             <div class="grade">
                 {% if submissions.graded == False %}
                     <p>This assignment has not been graded yet.</p>
@@ -34,7 +38,11 @@
                     <form method="POST">
                         {% csrf_token %}
                         <a href="{% url 'assignments:submit_delete' pk=submissions.pk %}" 
+<<<<<<< HEAD
                         class="btn btn-danger btn-lg">Delete</a>
+=======
+                        class="btn btn-secondary btn-lg">Delete</a>
+>>>>>>> origin/master
                     </form>
                     
                 </div>
@@ -44,7 +52,11 @@
                     {% if submissions.graded == False %}
                         <div>
                             <a href="{% url 'assignments:grade' pk=submissions.pk %}" 
+<<<<<<< HEAD
                             class="btn btn-success btn-lg">Grade</a>
+=======
+                            class="btn btn-secondary btn-lg">Grade</a>
+>>>>>>> origin/master
                         </div>
                     {% endif %}
                 {% endif %}

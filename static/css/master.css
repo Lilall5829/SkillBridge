@@ -1,6 +1,10 @@
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
+<<<<<<< HEAD
   width: 20%; /* Set the width of the sidebar */
+=======
+  width: 22%; /* Set the width of the sidebar */
+>>>>>>> origin/master
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
@@ -15,7 +19,11 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: 'DM Sans', sans-serif;
 }
+<<<<<<< HEAD
 p, a{
+=======
+p, a {
+>>>>>>> origin/master
   font-family: 'Raleway', 'sans-serif';
 }
 
@@ -47,7 +55,11 @@ p, a{
 
 .content {
   margin-top: 2em;
+<<<<<<< HEAD
   margin-left: 22%;
+=======
+  margin-left: 23%;
+>>>>>>> origin/master
   margin-bottom: 2em;
   margin-right: 2em;
 }
@@ -67,15 +79,24 @@ i {
 }
 
 .side-items {
+<<<<<<< HEAD
   margin-left: 0.5em;
   margin-right: 0.5em;
+=======
+  margin-left: 0em;
+  margin-right: 0em;
+>>>>>>> origin/master
 }
 
 #side-head {
   margin-top: 0.5em;
   padding: 6px 8px 6px 16px;
   text-decoration: none;
+<<<<<<< HEAD
   font-size: 25px;
+=======
+  font-size: 20px;
+>>>>>>> origin/master
   color: #f3f3f3;
 }
 
@@ -88,11 +109,27 @@ i {
 }
 
 .card-deck, .assignments, .submissions, .grade {
+<<<<<<< HEAD
   margin:3% 0% 3% 0%
 }
 
 .resources {
   margin-bottom: 1%;
+=======
+  margin:3% 0 3% 0
+}
+
+.resources {
+  margin:3% 0 3% 0 ;
+}
+
+.quizzes {
+  margin:3% 0 3% 0 ;
+}
+
+.lectures {
+ margin:3% 0 3% 0 ;
+>>>>>>> origin/master
 }
 
 .index-image {
@@ -101,4 +138,30 @@ i {
 
 .index-button {
   margin-top: 2em;
+<<<<<<< HEAD
+=======
+}
+
+.logout-button {
+  background: none;
+  border: none;
+  color: #999999;
+  font-size: 20px;
+  cursor: pointer;
+  padding-left: 16px;
+  text-align: left;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+.logout-button:hover {
+  color: #f1f1f1;
+}
+.logout-button:focus,
+.logout-button:active {
+  outline: none;
+  box-shadow: none;
+>>>>>>> origin/master
 }
